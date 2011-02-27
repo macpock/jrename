@@ -1,8 +1,8 @@
-=Pour renommer vos fichiers avec jRename=
+Pour renommer vos fichiers avec jRename
 
-==Utilisation générale==
+=Utilisation générale=
 
-===Format des noms de fichiers===
+==Format des noms de fichiers==
 
  * tout en minuscule : Transforme chaque lettre en minuscule.
  * TOUT EN MAJUSCULE : Transforme chaque lettre en majuscule.
@@ -15,18 +15,18 @@
  * Enlever les (#)'s : Supprime les parenthèses et leur contenu.
  * Enlever les (.) en trop : Enlève les points qui ne définissent pas l'extension du fichier.
 
-===Increment===
+==Increment==
 
  * Début : Indice de démarrage de l'incrément.
  * Pas : Pas de l'incrément (différence entre deux valeurs successives).
  * Digits : Nombre minimum de caractères pour l'incrément. Un incrément débutant à 1, avec un pas de 1 sur 4 digits aura la séquence suivante 0001, 0002, 0003, ...
 
-===Caractères interdits===
+==Caractères interdits==
 
  * Supprimer : Définit une liste de caractères interdits.
  * Remplacer : Définit une liste de caractères à remplacer par un autre caractère.
 
-===Nom de sortie===
+==Nom de sortie==
 
 Vous pouvez inclure des informations spécifiques pour chaque fichiers :
 
@@ -38,13 +38,13 @@ Vous pouvez inclure des informations spécifiques pour chaque fichiers :
  * %e : Insère l'extension.
  * %g0, %g1, ... : Insère les groupes capturés.
 
-===Filtrage et capture===
+==Filtrage et capture==
 
 Utilisez des expressions régulières pour filtrer les fichiers. Seuls les fichiers qui vérifient l'expression régulière seront renommés. Les fichiers qui ne vérifient pas l'expression régulière sont marqués d'une croix rouge. Utilisez des parenthèses pour capturer des groupes.
 
-==Expressions régulières==
+=Expressions régulières=
 
-===Filtrer les extensions===
+==Filtrer les extensions==
 
 Une expression régulière peut permettre de ne retenir que les fichiers avec une certaine extension. Par exemple, pour ne renommer que des photos au format jpeg, il faut utiliser l'expression régulière qui ne retient que les extensions "jpg" et "JPG" :
 
@@ -52,7 +52,7 @@ Une expression régulière peut permettre de ne retenir que les fichiers avec un
 .*\.(JPG||jpg)
 }}}
 
-===Capture d'informations===
+==Capture d'informations==
 
 L'usage des parenthèses dans les expressions régulières permet d'extraire des informations du nom original pour les réutiliser dans le nom souhaité. Pour renommer des photos de vacances qui ont un nom attribué par votre appreil photo numérique :
 
